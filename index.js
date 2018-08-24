@@ -3,7 +3,7 @@
  * Hello, by Joe
  */
 
- // // Dependencies
+// Dependencies
 var http = require('http');
 var url = require('url');
 var StringDecoder = require('string_decoder').StringDecoder;
@@ -63,8 +63,8 @@ var httpServer = http.createServer(function(req, res) {
             res.setHeader('Content-Type', 'application/json');
             res.writeHead(statusCode);
             res.end(payloadString);
-            // Log the request
-            
+         
+            // Log the request            
             console.log("Response: ", statusCode, payloadString);
         });        
     });
